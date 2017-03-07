@@ -1,4 +1,4 @@
-# Teste Front-end - Amil - Victor Brosso (vbrosso@gmail.com)
+# Teste Front-end - R7 - Victor Brosso (vbrosso@gmail.com)
 
 ## Tecnologias usadas
 
