@@ -31,6 +31,18 @@ Foi usado o npm para instalar as dependências, pelo nodejs.
 2. style.css --> style.min.css
 3. main.js --> main.min.js 
 
+###Testes:
+No caso de usar API REST foi elaborado um teste com FRISBY.JS para a automação de testes.
+Necessário instalar as dependências:
+
+	npm install -g frisby
+	npm install -g jasmine-node
+
+Rodando o teste com:
+	
+	jasmine-node frisby_test_spec.js
+
+	
 
 ## Observações do Build:
 Desconsiderar (não avaliar) os arquivos e diretorios minificados gerados pelos plugins do Grunt:

@@ -1,5 +1,5 @@
 {
-  "name": "R7FrontendTest",
+  "name": "frisby_test",
   "version": "0.0.1",
   "repository": {
     "type": "git",
@@ -9,15 +9,17 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "connect": "~3.1.1",
-    "serve-static": "~1.5.3"
+    "frisby": "*",
+    "jasmine-node": "*"
   },
   "author": "Victor Brosso",
   "license": "ISC",
   "devDependencies": {
+    "frisby": "^0.8.5",
     "grunt": "^1.0.1",
     "grunt-contrib-cssmin": "^2.0.0",
     "grunt-contrib-htmlmin": "^2.2.0",
     "grunt-contrib-uglify": "^2.2.0"
-  }
+  },
+  "main": "frisby_test_spec.js"
 }
