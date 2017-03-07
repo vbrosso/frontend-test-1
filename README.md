@@ -40,7 +40,8 @@ Desconsiderar (não avaliar) os arquivos e diretorios minificados gerados pelos 
 3. ** main.min.js**
 
 
-*Obrigado!*
+
+#*Obrigado!*#
 
 
 

@@ -57,7 +57,7 @@ body {
 /*RAKING*/
 .container{
 	margin: 0 auto;
-	width: 375px;
+	width: 347px;
 	position: relative;
 	header{
 		float: left;
@@ -78,9 +78,10 @@ body {
 			text-transform: uppercase;
 			text-align: right;
 			width: calc(100% - 20px);
-			padding: 133px 20px 8px 0;
+			padding: 133px 10px 8px 0;
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 700;
+			letter-spacing: -2px;
 			&:before {
 				content:'';
 				background: $textos-color;
@@ -99,12 +100,13 @@ body {
 		#lstRanking{
 			float: left;
 			clear: both;
+			padding: 10px 0 0 0;
 			li{
 				display: block;
 			    list-style: none;
 			    width: calc(100% - 10px);
 			    float: left;
-			    padding: 13px 0 13px 10px;
+			    padding: 8px 0 13px 10px;
 			    position: relative;
 			    &:empty {
 			    	display:none;
@@ -112,6 +114,21 @@ body {
 			    &:hover{
 			    	background:#ba3638;
 			    }
+			    &:nth-child(1) .classificacao:after{
+						content: '1';
+				}
+				&:nth-child(3) .classificacao:after{
+						content: '2';
+				}
+				&:nth-child(5) .classificacao:after{
+						content: '3';
+				}
+				&:nth-child(7) .classificacao:after{
+						content: '4';
+				}
+				&:nth-child(9) .classificacao:after{
+						content: '5';
+				}
 			    span.classificacao{
 			    	position: absolute;
 			    	left: 62px;
@@ -138,12 +155,12 @@ body {
 				}
 				h2{
 					color: #ba3638;
-					font-size: 20px;
+					font-size: 18px;
 					text-align: left;
 					font-weight: normal;
 					padding: 0 0 0 20px;
 					float: left;
-					width: 270px;
+					width: 234px;
 				}
 				&:hover h2{
 					color: #fff;
@@ -164,8 +181,8 @@ body {
 				}
 				.likes{
 					position: absolute;
-					right: -165px;
-					top: 40px;
+					right: -175px;
+					top: 20px;
 					width:156px;
 					height: 41px;
 					float: left;
@@ -227,21 +244,6 @@ body {
 					}
 				}
 			}
-		}
-		#lstRanking li:nth-child(1) .classificacao:after{
-			content: '1';
-		}
-		#lstRanking li:nth-child(3) .classificacao:after{
-			content: '2';
-		}
-		#lstRanking li:nth-child(5) .classificacao:after{
-			content: '3';
-		}
-		#lstRanking li:nth-child(7) .classificacao:after{
-			content: '4';
-		}
-		#lstRanking li:nth-child(9) .classificacao:after{
-			content: '5';
 		}
 	}
 }
