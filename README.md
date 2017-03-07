@@ -1,3 +1,49 @@
+# Teste Front-end - Amil - Victor Brosso (vbrosso@gmail.com)
+
+## Tecnologias usadas
+
+
+### Pré-processador: SASS
+Arquivos scss: stylesheets\scss
+
+Foi usado a IDE ScoutApp para converter automaticamente os arquivos *.scss em *.css
+
+
+## Arquivos para o(s) avaliador(es) analisar(em):
+1. **HTML: \public\index.html**
+2. **CSS: \public\stylesheets\sass\style.scss**
+3. **JS: \public\javascripts\main.js**
+
+
+
+## Precisando compilar os arquivos:
+Foi usado o npm para instalar as dependências, pelo nodejs.
+
+
+### Task manager: Grunt
+1. /Gruntfile.js
+2. /package.json
+3. Plugins usados: grunt-contrib-uglify, grunt-contrib-cssmin, grunt-contrib-htmlmin
+
+
+###Tarefas do Grunt: minifica o arquivos:
+1. index.html --> index_prod.html
+2. style.css --> style.min.css
+3. main.js --> main.min.js 
+
+
+## Observações do Build:
+Desconsiderar (não avaliar) os arquivos e diretorios minificados gerados pelos plugins do Grunt:
+
+1. ** index_prod.html**
+2. ** style.min.css**
+3. ** main.min.js**
+
+
+*Obrigado!*
+
+
+
 ### Sobre o R7.com
 R7.com, é um portal mantido pela Rádio e Televisão Record S/A, com quase
 5 anos de vida possui 50 milhões de visitantes únicos, e 1 bilhão e meio
