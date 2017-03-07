@@ -1,11 +1,23 @@
 {
   "name": "R7FrontendTest",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vbrosso/frontend-test-1.git"
+  },
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
     "connect": "~3.1.1",
     "serve-static": "~1.5.3"
+  },
+  "author": "Victor Brosso",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-htmlmin": "^2.2.0",
+    "grunt-contrib-uglify": "^2.2.0"
   }
 }

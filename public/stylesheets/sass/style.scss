@@ -59,9 +59,8 @@ body {
 	margin: 0 auto;
 	width: 375px;
 	position: relative;
-	.ranking{
+	header{
 		float: left;
-		clear: both;
 		width: 100%;
 		#logofazenda{
 			background: url('../images/logo-fazenda.png') no-repeat;
@@ -92,6 +91,11 @@ body {
 				top: 149px;
 			}
 		}
+	}
+	.ranking{
+		float: left;
+		clear: both;
+		width: 100%;
 		#lstRanking{
 			float: left;
 			clear: both;
@@ -160,7 +164,7 @@ body {
 				}
 				.likes{
 					position: absolute;
-					right: -160px;
+					right: -165px;
 					top: 40px;
 					width:156px;
 					height: 41px;
