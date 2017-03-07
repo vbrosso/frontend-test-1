@@ -4,7 +4,7 @@
 
 
 ### Pré-processador: SASS
-Arquivos scss: stylesheets\scss
+Arquivos scss: \public\stylesheets\sass
 
 Foi usado a IDE ScoutApp para converter automaticamente os arquivos *.scss em *.css
 
