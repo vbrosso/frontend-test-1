@@ -1,0 +1,243 @@
+/*RESET*/
+ul, ol {
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-size: 1em;
+}
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, dl, dt, dd, figure, figcaption, button {
+  margin: 0;
+  padding: 0;
+}
+a img, :link img, :visited img, fieldset {
+  border: none;
+}
+address {
+  font-style: normal;
+}
+header, section, article, nav, footer, hgroup, details, summary, figure, main {
+  display: block;
+}
+mark {
+  color: inherit;
+  background: transparent;
+}
+abbr {
+  border: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+/*VARIAVEIS*/
+$textos-color: #272727;
+
+/*MIXINS*/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+body {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: $textos-color;
+}
+
+#lstRanking li:visible { 
+			      background-color:  #000;  
+			 }
+
+/*RAKING*/
+.container{
+	margin: 0 auto;
+	width: 375px;
+	position: relative;
+	.ranking{
+		float: left;
+		clear: both;
+		width: 100%;
+		#logofazenda{
+			background: url('../images/logo-fazenda.png') no-repeat;
+			width: 185px;
+			height: 193px;
+			float: left;
+			margin: 0 0 0 -35px;
+			z-index: 1;
+			position: relative;
+		}
+		h1{
+			border-bottom: 15px solid $textos-color;
+			color: $textos-color;
+			font-size: 32px;
+			text-transform: uppercase;
+			text-align: right;
+			width: calc(100% - 20px);
+			padding: 133px 20px 8px 0;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+			&:before {
+				content:'';
+				background: $textos-color;
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				left: 0;
+				top: 149px;
+			}
+		}
+		#lstRanking{
+			float: left;
+			clear: both;
+			li{
+				display: block;
+			    list-style: none;
+			    width: calc(100% - 10px);
+			    float: left;
+			    padding: 13px 0 13px 10px;
+			    position: relative;
+			    &:empty {
+			    	display:none;
+			    }
+			    &:hover{
+			    	background:#ba3638;
+			    }
+			    span.classificacao{
+			    	position: absolute;
+			    	left: 62px;
+    				top: 58px;
+			    	background: #fff;
+			    	border:1px solid #707070;
+			    	color: #707070;
+			    	width: 20px;
+			    	height: 17px;
+			    	@include border-radius(10px);
+			    	padding: 4px 0 0 0;
+			    	font-size: 12px;
+			    	font-weight: 600;
+			    }
+				.imgPerfil{
+					@include border-radius(45px);
+					width: 65px;
+					height: 60px;
+					float: left;
+					border:4px solid #ba3638;
+				}
+				&:hover img{
+					border:4px solid #fff;
+				}
+				h2{
+					color: #ba3638;
+					font-size: 20px;
+					text-align: left;
+					font-weight: normal;
+					padding: 0 0 0 20px;
+					float: left;
+					width: 270px;
+				}
+				&:hover h2{
+					color: #fff;
+				}
+				p{
+					color: #909090;
+					font-size: 12px;
+					text-align: left;
+					font-weight: normal;
+					padding: 0 0 0 20px;
+					float: left;
+				}
+				&:hover p{
+					color: $textos-color;
+				}
+				&:hover .likes{
+					display: block;	
+				}
+				.likes{
+					position: absolute;
+					right: -160px;
+					top: 40px;
+					width:156px;
+					height: 41px;
+					float: left;
+					-webkit-box-shadow:  0px 0px 20px 0px rgba(0,0,0,.5);
+					-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,.5);
+					box-shadow: 0px 0px 20px 0px rgba(0,0,0,.5);
+					@include border-radius(7px);
+					display: none;
+					z-index: 2;
+					.seta{
+						    width: 0;
+						    height: 0;
+						    border-style: solid;
+						    border-width: 5px 10px 5px 0;
+						    border-color: transparent #fff transparent transparent;
+						    position: absolute;
+						    left: -9px;
+						    top: 19px;
+						    background: transparent;
+					}
+					span{
+						color: #fff;
+						background:#ba3638;
+						text-align: center;
+						text-transform: uppercase;
+						font-size: 9px;
+						float: left;
+						padding: 2px 0 2px 0;
+					}
+					span.gostam{
+						width: 63px;
+						border-right: 1px solid #8c8b8b;
+						-webkit-border-top-left-radius: 5px;
+						-moz-border-radius-topleft: 5px;
+						border-top-left-radius: 5px;
+
+					}
+					span.ngostam{
+						border-left: 1px solid #c57071;
+						width: 91px;
+						-moz-border-radius-topright: 5px;
+						border-top-right-radius: 5px;
+					}
+					strong.gostam{
+						width: 63px;
+						text-align: center;
+						font-size: 22px;
+						float: left;
+						border-right: 1px solid #8c8b8b;
+						color: #909090;
+					}
+					strong.ngostam{
+						width: 91px;
+						text-align: center;
+						font-size: 22px;
+						float: left;
+						border-left: 1px solid #c57071;
+						color: #909090;
+					}
+				}
+			}
+		}
+		#lstRanking li:nth-child(1) .classificacao:after{
+			content: '1';
+		}
+		#lstRanking li:nth-child(3) .classificacao:after{
+			content: '2';
+		}
+		#lstRanking li:nth-child(5) .classificacao:after{
+			content: '3';
+		}
+		#lstRanking li:nth-child(7) .classificacao:after{
+			content: '4';
+		}
+		#lstRanking li:nth-child(9) .classificacao:after{
+			content: '5';
+		}
+	}
+}
